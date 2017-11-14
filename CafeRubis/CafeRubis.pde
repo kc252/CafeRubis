@@ -16,6 +16,7 @@ void setup() {
 void draw(){
 
   displayProducts();
+  displayBill();
   
 }
 
@@ -46,7 +47,7 @@ void loadData(){
     float border2 = width*0.01f;
     
     textSize(30);
-    stroke(0, 255, 0);
+    stroke(255);
     fill(0);
     textAlign(TOP,CENTER);
     text("Cafe Rubis Till System", border*3, border*0.5);
@@ -73,6 +74,13 @@ void loadData(){
         text( p.toString(), width/border2*1.08, height/border2*j+1*100);
         
       }
+  }
+  
+  void displayBill(){
+    
+     fill(255);
+     rect(450, 80, buttonWidth+30, buttonHeight+450);
+    
   }
   
 void mousePressed()
